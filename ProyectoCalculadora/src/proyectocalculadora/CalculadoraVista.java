@@ -11,14 +11,14 @@ package proyectocalculadora;
 public class CalculadoraVista extends javax.swing.JFrame {
 
     /**
-     * Creates new form Calculadora
+     * Creates new form CalculadoraVista
      */
     public CalculadoraVista() {
         initComponents();
-        
     }
     
     
+    //Funcion Creada para evaluar si es una nueva operacion o no 
     private void addText(String text){
         if (resultado){
             tRes.setText(text);
@@ -28,8 +28,6 @@ public class CalculadoraVista extends javax.swing.JFrame {
             tRes.setText(tRes.getText() + text);
         }
     }
-    
-    
     
 
     /**
@@ -306,6 +304,8 @@ public class CalculadoraVista extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    //Todos los bottones se anaden al String del tRes
     private void b1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b1MouseClicked
         addText("1");
     }//GEN-LAST:event_b1MouseClicked
@@ -374,6 +374,7 @@ public class CalculadoraVista extends javax.swing.JFrame {
         addText("4");
     }//GEN-LAST:event_bCleMouseClicked
 
+    //Al selcionar igual el string de tRes se utliza para calcular la expression con la clase Calculadora
     private void bIguMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bIguMouseClicked
         resultado = true;
         
@@ -431,6 +432,7 @@ public class CalculadoraVista extends javax.swing.JFrame {
         });
     }
     
+    //Declaracion del objeto c tipo Calculadora para evaluar las expresiones
     private Calculadora c = new Calculadora();
     
     private boolean resultado;
