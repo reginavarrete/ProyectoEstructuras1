@@ -371,7 +371,7 @@ public class CalculadoraVista extends javax.swing.JFrame {
     }//GEN-LAST:event_bMasMouseClicked
 
     private void bCleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bCleMouseClicked
-        addText("4");
+        tRes.setText("");
     }//GEN-LAST:event_bCleMouseClicked
 
     //Al selcionar igual el string de tRes se utliza para calcular la expression con la clase Calculadora
